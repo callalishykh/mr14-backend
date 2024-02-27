@@ -1,5 +1,8 @@
+import "dotenv/config";
+
 import Express, { json } from "express";
 import { connectDB } from "./db/config.js";
+
 import dbInit from "./db/init.js";
 import authRouter from "./routes/auth/index.js";
 import commentRouter from "./routes/post/comment.js";
